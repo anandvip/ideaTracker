@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS idea Tracker</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style media="screen">
+      .sev{
+        color: rgba(0, 0, 0, 0.21);
+      }
+    </style>
+  </head>
+  <body onload="fetchideas()">
+    <div class="container">
+      <div class="page-header"><h1>IdeaTracker <small>by Vipul Anand</small></h1></div>
+      <div class="jumbotron">
+        <h3>Add New Idea:</h3>
+        <form id="ideaInputForm">
+          <div class="form-group">
+            <label for="ideaDescInput">In few words :</label>
+            <input type="text" class="form-control" id="ideaDescInput" placeholder="Describe the idea in a line ...">
+          </div>
+          <div class="form-group">
+            <label for="ideaIntensityInput">Importance of the Idea :</label>
+            <select id="ideaIntensityInput" class="form-control">
+              <option value="Just a crossing thought">Just a crossing thought</option>
+              <option value="Looks Practical">Looks Practical</option>
+              <option value="Must Explore">Must Explore</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ideaPerspectiveInput">Describe this Idea :</label>
+            <input type="textarea" class="form-control" id="ideaPerspectiveInput" placeholder="Who likes limits to write in a flow ...">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Keep this Idea for now</button>
+                    </form>
+                  </div>
+                  <div class="col-lg-12">
+                    <div id="ideasList">
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <p>&copy <a href="#" target="_blank">Vipul Anand</a> | <a href="#" target="_blank">Imprint</a></p>
+                  </div>
+                </div>
+                <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+                <script src="chance.js"></script>
+                <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+                <!-- Latest compiled and minified JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                <script src="app.js"></script>
+                <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZSdyc2kHwvVXOxTwj_I9R33cs95HGZEM",
+    authDomain: "idea-tracker-app.firebaseapp.com",
+    databaseURL: "https://idea-tracker-app.firebaseio.com",
+    storageBucket: "idea-tracker-app.appspot.com",
+    messagingSenderId: "178439041377"
+  };
+  let app =  firebase.initializeApp(config);
+  let db = app.database();
+
+  let ideaRef = db.ref('idea');
+</script>
+              </body>
+            </html>

@@ -1,0 +1,14 @@
+{
+  "idea" : [ null, {
+    "ideaDesc" : "First Idea",
+    "ideaIntensity" : "Looks Practical",
+    "ideaPerspective" : "some Idea",
+    "ideaStatus" : "Idea is in consideration"
+  },
+  {
+    "ideaDesc" : "Second Idea",
+    "ideaIntensity" : "Looks Practical",
+    "ideaPerspective" : "Firebase works better",
+    "ideaStatus" : "Idea is in consideration"
+    } ]
+}
