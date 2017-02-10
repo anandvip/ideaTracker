@@ -3,7 +3,7 @@
 * @Author: vipul
 * @Date:   2017-02-04T13:04:51+05:30
 * @Last modified by:   vipul
-* @Last modified time: 2017-02-09T10:12:10+05:30
+* @Last modified time: 2017-02-09T23:16:19+05:30
 */
 
 document.getElementById('ideaInputForm').addEventListener('submit', saveidea);
@@ -90,8 +90,8 @@ function fetchideas() {
                               '<h3>' + desc + '</h3>'+
                               '<p class="sev"><span class="glyphicon glyphicon-time"></span> ' + intensity + '</p>'+
                               '<p><span class="glyphicon glyphicon-user"></span> ' + perspective + '</p>'+
-                              '<a href="#" onclick="setStatusClosed(\''+id+'\')" class="btn btn-warning">Impliment this Idea</a> '+
-                              '<a href="#" onclick="deleteidea(\''+id+'\')" class="btn btn-danger">Drop this Idea</a>'+ '<br>'+ '<sub>Idea ID: ' + id + '</sub>' + '</div>' +
+                              '<a href="#" onclick="setStatusClosed(\''+id+'\')" class="btn btn-warning btn-spacerB">Impliment this Idea</a> '+
+                              '<a href="#" onclick="deleteidea(\''+id+'\')" class="btn btn-danger btn-spacerB">Drop this Idea</a>'+ '<br>'+ '<sub>Idea ID: ' + id + '</sub>' + '</div>' +
                               '</div>';
   }
 }
