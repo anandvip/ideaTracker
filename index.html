@@ -18,7 +18,7 @@
   </head>
   <body onload="fetchideas()">
     <div class="container">
-      <div class="page-header"><h1>IdeaTracker <small>using Firebase</small></h1></div>
+      <div class="page-header"><h1>IDEATRACKER <small>using Firebase</small></h1></div>
       <div class="jumbotron">
         <h3>Add New Idea:</h3>
         <form id="ideaInputForm">
@@ -29,7 +29,7 @@
           <div class="form-group">
             <label for="ideaIntensityInput">Importance of the Idea :</label>
             <select id="ideaIntensityInput" class="form-control">
-              <option value="Just a crossing thought">Just a crossing thought</option>
+              <option value="Just a crossing thought">Just a passing thought</option>
               <option value="Looks Practical">Looks Practical</option>
               <option value="Must Explore">Must Explore</option>
             </select>
@@ -62,6 +62,7 @@
     databaseURL: "https://idea-tracker-app.firebaseio.com",
     storageBucket: "idea-tracker-app.appspot.com",
     messagingSenderId: "000000000000"
+
   };
   let app =  firebase.initializeApp(config);
   let db = app.database();
