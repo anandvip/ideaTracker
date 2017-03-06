@@ -3,7 +3,7 @@
 * @Author: vipul
 * @Date:   2017-02-04T13:04:51+05:30
 * @Last modified by:   vipul
-* @Last modified time: 2017-02-09T23:16:19+05:30
+* @Last modified time: 2017-02-13T19:24:08+05:30
 */
 
 document.getElementById('ideaInputForm').addEventListener('submit', saveidea);
@@ -84,7 +84,7 @@ function fetchideas() {
     var perspective = ideas[i].perspective;
     var status = ideas[i].status;
 
-    ideasList.innerHTML +=   '<div class="col-sm-6 col-md-4">'+
+    ideasList.innerHTML +=   '<div class="col-sm-12 col-md-12">'+
 '<div class="well">'+
                               '<p><span class="label label-info">' + status + '</span></p>'+
                               '<h3>' + desc + '</h3>'+
